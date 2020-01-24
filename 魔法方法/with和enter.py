@@ -51,8 +51,7 @@ class OpenFile:
         self.filename = './示范环境/sample.txt'
 
     def __enter__(self):
-        self.file_txt = open(self.filename, 'r')
-        return self.file_txt
+        return open(self.filename, 'r')
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         pass
